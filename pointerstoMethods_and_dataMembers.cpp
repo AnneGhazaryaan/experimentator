@@ -31,6 +31,8 @@ int main() {
     int Point::*nonStaticVPtr = &Point::midpoint;
     std::cout << *staticVPtr << A.*nonStaticVPtr << std::endl;
     
+    //int Point::*privateNonStaticVPtr = &Point::m_v; //error
+    
     return 0;
 }
 
